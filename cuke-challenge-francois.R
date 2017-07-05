@@ -7,3 +7,6 @@ download.file("http://r-bio.github.io/data/holothuriidae-nomina-valid.csv",
 ## import data in R memory
 nom <- read.csv(file="data/holothuriidae-nomina-valid.csv",
                 stringsAsFactors=FALSE)
+
+## create data.table version
+nom_DT = data.table::as.data.table(nom)
